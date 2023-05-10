@@ -94,7 +94,8 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\proc:video_games-proc-config">
-        <flow-ref doc:name="Flow Reference" doc:id="757b4cdf-ac5c-4192-9d64-eb96706f6401" name="Get-Implementation-ProcFlow" />
+        <logger level="INFO" doc:name="Logger" doc:id="c16fa240-d425-4454-afd8-f13678dc7755" />
+		<flow-ref doc:name="Flow Reference" doc:id="757b4cdf-ac5c-4192-9d64-eb96706f6401" name="Get-Implementation-ProcFlow" />
     </flow>
     <flow name="post:\proc:video_games-proc-config">
         <flow-ref doc:name="Flow Reference" doc:id="0825fd0f-1f9a-478e-8e3b-96b2484fed64" name="POST-Implementation-ProcFlow1" />

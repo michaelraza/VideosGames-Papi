@@ -14,7 +14,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 		<app.runtime>4.4.0-20230123</app.runtime>
-		<mule.maven.plugin.version>3.8.0</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.7.1</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -30,6 +30,18 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<cloudHubDeployment>
+							<uri>https://anypoint.mulesoft.com/</uri>
+							<muleVersion>4.4.0</muleVersion>
+							<username>${username}</username>
+							<password>${password}</password>
+							<applicationName>MongoDB-sys</applicationName>
+							<environment>Sandbox</environment>
+							<workerType>Micro</workerType>
+							<workers>1</workers>
+							<objectStoreV2>true</objectStoreV2>
+						
+						</cloudHubDeployment>
 					<classifier>mule-application</classifier>
 				</configuration>
 			</plugin>

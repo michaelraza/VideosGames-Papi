@@ -1,0 +1,12 @@
+listener:
+  host: "0.0.0.0"
+  port: ""
+  
+request:
+  host: "mongodbsysrawgio.us-e2.cloudhub.io"
+  port: ""
+  
+request1:
+  host: "mongodb-sys.us-e2.cloudhub.io "
+  port: ""
+  

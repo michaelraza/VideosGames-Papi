@@ -17,12 +17,6 @@ http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/cu
 	<http:request-config name="RequestMongoDB" doc:name="HTTP Request configuration" doc:id="327f132f-e337-49fa-bc73-627bbc0503e4" basePath="/api" >
 		<http:request-connection host="${request1.host}" port="${request1.port}" />
 	</http:request-config>
-	<http:listener-config name="Listener_date" doc:name="HTTP Listener config" doc:id="8345cb88-42d8-45c2-b158-1c5bbacc2f48" >
-		<http:listener-connection host="${ListDate.host}" port="${ListDate.port}" />
-	</http:listener-config>
-	<http:listener-config name="Listene_Ratings" doc:name="HTTP Listener config" doc:id="7039bb14-5ad4-4317-8a66-a9e08ba6fb49" >
-		<http:listener-connection host="${ListRat.host}" port="${ListRat.port}" />
-	</http:listener-config>
 	<ee:object-store-caching-strategy name="Caching_Strategy" doc:name="Caching Strategy" doc:id="b196a3fe-64af-4429-9d30-d9bb2f7f9d33">
 		<os:private-object-store alias="Cache" maxEntries="1000" entryTtl="100" expirationInterval="5" />
 	</ee:object-store-caching-strategy>
